@@ -14,24 +14,24 @@
 ActiveRecord::Schema.define(version: 20141114094420) do
 
   create_table "cheeses", force: true do |t|
-    t.string   "name"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.string   "name",       null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "shops", force: true do |t|
-    t.string   "name"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.string   "name",       null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "stocks", force: true do |t|
-    t.integer  "shop_id"
-    t.integer  "cheese_id"
-    t.integer  "amount"
-    t.float    "price"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.integer  "shop_id",    null: false
+    t.integer  "cheese_id",  null: false
+    t.integer  "amount",     null: false
+    t.float    "price",      null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
 end
